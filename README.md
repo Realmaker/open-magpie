@@ -10,11 +10,13 @@ changelogs, decisions, tasks, and summaries that would otherwise be lost
 the moment the terminal closes.
 
 [Features](#features) ·
-[Why](#why-open-magpie) ·
+[Screenshots](#screenshots) ·
 [How it works](#how-it-works) ·
 [Installation](#installation) ·
 [API](#api-reference) ·
 [Worker](#remote-worker)
+
+![Open Magpie dashboard](docs/screenshots/dashboard.jpg)
 
 </div>
 
@@ -57,6 +59,35 @@ remembering — as structured, searchable, versioned data.
   another machine to pick up and execute.
 - **Simple HTTP API** — so any tool (Claude Code, a shell script, a
   cron job) can write to it with a single `curl`.
+
+## Screenshots
+
+### Projects — health scores, tech stacks, and activity at a glance
+
+![Projects list](docs/screenshots/projects.jpg)
+
+### Project timeline — every event type in chronological order
+
+Changelogs, decisions, milestones, session summaries, issues — each with
+its own icon and color. Filterable by type.
+
+![Project timeline](docs/screenshots/project-timeline.png)
+
+### Task board — Kanban with source tags
+
+Tasks created from inside a Claude Code session show up here alongside
+manually-added ones, with priority, labels, and type.
+
+![Task board](docs/screenshots/project-tasks.png)
+
+### Document viewer — versioned markdown with change notes
+
+Every PUT on a document creates a new version. Browse the history, see
+what changed, restore if needed.
+
+![Document viewer](docs/screenshots/project-mdfile.png)
+
+---
 
 ## How it works
 
