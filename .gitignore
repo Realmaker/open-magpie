@@ -1,0 +1,63 @@
+# --- Laravel ---
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+bootstrap/cache/*.php
+
+# --- Environment files (belt-and-suspenders, also explicit paths) ---
+.env
+.env.backup
+.env.production
+.env.local
+/worker/.env
+
+# --- Logs ---
+*.log
+/storage/logs/*
+
+# --- Databases / caches ---
+*.sqlite
+*.sqlite-journal
+.phpunit.result.cache
+.phpunit.cache
+/coverage
+
+# --- Python (worker) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# --- IDE / editor ---
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+/.phpactor.json
+
+# --- Claude Code local state (not for sharing) ---
+/.claude/settings.local.json
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Laravel tooling ---
+/auth.json
+Homestead.json
+Homestead.yaml
+
+# --- Snapshots / downloads (runtime-generated) ---
+/storage/app/downloads
+/storage/app/private
+/storage/app/public/snapshots
+
+# --- Project planning (local only) ---
+/GEPLANTE-AENDERUNGEN.md
